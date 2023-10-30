@@ -1,34 +1,34 @@
 import {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      name: 'Deepansh Pandey',
-      company: 'Start Your Masters',
-    }
-  }
+      monsters: [
+      {
+        name: 'Linda',
+      },
+      {
+        name: 'Frank',
+      },
+      {
+        name: 'Jacky',
+      },
+      {
+        name: 'Test',
+      },
+      ]
+  };
+}
   render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p> Hi {this.state.name}! </p>
-          <button 
-            onClick={() => {
-              this.setState({name:'TDP'});
-          }}> Change Name </button>
-          <a
-            className="App-link"
-            href="https://deepanshpandey.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit My Website
-          </a>
-        </header>
+        {
+          this.state.monsters.map((monsters) => {
+            return <h1>{monsters.name}</h1>
+          })
+        }
       </div>
     );
   }  
