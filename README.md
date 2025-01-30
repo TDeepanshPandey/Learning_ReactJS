@@ -84,3 +84,18 @@ this.setState((state, props) => { return {name : 'Deep' }}, () => {console.log(t
       }))
   }
 ```
+
+- Optimizations: Use variables in the render method to store values that are used multiple times, instead of using this.state many times. This can help improve performance by reducing the number of calculations in the render method.
+- Take methods out of the render method and define them as class methods. This can help improve performance by reducing the number of calculations in the render method.
+
+```jsx
+    const { monsters, searchfield } = this.state
+    const { onSearchChange } = this
+
+  onSearchChange = (event) => {
+      const searchfield = event.target.value.toLocaleLowerCase()
+      this.setState(() => {
+        return { searchfield }
+      })
+    }
+```
