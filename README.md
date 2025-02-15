@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/user/d9585be0-a800-4e7a-9c42-e2fb31c12a87/project/018b7d15-06fc-4dce-8861-610f758cca18.svg)](https://wakatime.com/badge/user/d9585be0-a800-4e7a-9c42-e2fb31c12a87/project/018b7d15-06fc-4dce-8861-610f758cca18)
+
 # Learning_ReactJS
 
  Learning React JavaScript
